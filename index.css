@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    overflow: hidden;
+}  
+
+.css-main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-card {
+    overflow: hidden;
+    display: flex;
+    width: 920px;
+    height: 510px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+}
+
+.css-left-side {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+}
+
+.css-left-side .css-background {
+    position: relative;
+    top: -58%;
+    left: -124%;
+}
+
+.css-left-side .css-woman {
+    position: relative;
+    top: 13%;
+    left: -227%;
+}
+
+.css-box {
+    position: absolute;
+    top: 42%;
+    left: 14%;
+}
+
+.css-right-side {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.css-question {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.css-question-bold {
+    font-weight: bold;
+}
+
+.css-question-border-bot {
+    border-bottom: 1px solid lightgray;
+}
+
+.css-question p:hover {
+    color: red;
+}
+.css-question button {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    border: hidden;
+    cursor: pointer;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.css-button-rotate {
+    transform: rotate(180deg);
+}
+
+
+.css-answer {
+    width: 420px;
+    border-bottom: 1px solid lightgray;
+}
