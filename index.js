@@ -49,7 +49,21 @@ function createAnswerTemplate(obj){
 dropDownButton1.addEventListener("click", function(){
     questionDiv = document.getElementById(asnwer1.qID);
     questionP = document.querySelector(`#${asnwer1.qID} p`);
+    
+    listOfAnswers = document.querySelectorAll(".css-answer");
+    listOfAnswers.forEach(element => {
+        if(element.id !== asnwer1.aID){
+            element.remove();
+        }
+    });
+    
     if(document.getElementById(asnwer1.aID) === null){
+        btn = document.querySelector(".css-button-rotate");
+        if (btn !== null){    
+            if(btn !== dropDownButton1){
+                btn.classList.remove("css-button-rotate");
+            }
+        }
         questionDiv.classList.remove("css-question-border-bot");
         questionP.classList.add("css-question-bold");
         dropDownButton1.classList.add("css-button-rotate");    
@@ -67,7 +81,21 @@ dropDownButton1.addEventListener("click", function(){
 dropDownButton2.addEventListener("click", function(){
     questionDiv = document.getElementById(asnwer2.qID);
     questionP = document.querySelector(`#${asnwer2.qID} p`);
+
+    listOfAnswers = document.querySelectorAll(".css-answer");
+    listOfAnswers.forEach(element => {
+        if(element.id !== asnwer2.aID){
+            element.remove();
+        }
+    });
+
     if(document.getElementById(asnwer2.aID) === null){
+        btn = document.querySelector(".css-button-rotate");
+        if (btn !== null){    
+            if(btn !== dropDownButton2){
+                btn.classList.remove("css-button-rotate");
+            }
+        }
         questionDiv.classList.remove("css-question-border-bot");
         questionP.classList.add("css-question-bold");
         dropDownButton2.classList.add("css-button-rotate");
@@ -85,7 +113,21 @@ dropDownButton2.addEventListener("click", function(){
 dropDownButton3.addEventListener("click", function(){
     questionDiv = document.getElementById(asnwer3.qID);
     questionP = document.querySelector(`#${asnwer3.qID} p`);
+    
+    listOfAnswers = document.querySelectorAll(".css-answer");
+    listOfAnswers.forEach(element => {
+        if(element.id !== asnwer3.aID){
+            element.remove();
+        }
+    });
+
     if(document.getElementById(asnwer3.aID) === null){    
+        btn = document.querySelector(".css-button-rotate");
+        if (btn !== null){    
+            if(btn !== dropDownButton3){
+                btn.classList.remove("css-button-rotate");
+            }
+        }
         questionDiv.classList.remove("css-question-border-bot");
         questionP.classList.add("css-question-bold");
         dropDownButton3.classList.add("css-button-rotate");
@@ -103,7 +145,22 @@ dropDownButton3.addEventListener("click", function(){
 dropDownButton4.addEventListener("click", function(){
     questionDiv = document.getElementById(asnwer4.qID);
     questionP = document.querySelector(`#${asnwer4.qID} p`);
+    
+    listOfAnswers = document.querySelectorAll(".css-answer");
+    listOfAnswers.forEach(element => {
+        if(element.id !== asnwer4.aID){
+            element.remove();
+        }
+    });
+    
+
     if(document.getElementById(asnwer4.aID) === null){    
+        btn = document.querySelector(".css-button-rotate");
+        if (btn !== null){    
+            if(btn !== dropDownButton4){
+                btn.classList.remove("css-button-rotate");
+            }
+        }
         questionDiv.classList.remove("css-question-border-bot");
         questionP.classList.add("css-question-bold");
         dropDownButton4.classList.add("css-button-rotate");
@@ -121,7 +178,23 @@ dropDownButton4.addEventListener("click", function(){
 dropDownButton5.addEventListener("click", function(){
     questionDiv = document.getElementById(asnwer5.qID);
     questionP = document.querySelector(`#${asnwer5.qID} p`);
+    
+    listOfAnswers = document.querySelectorAll(".css-answer");
+    listOfAnswers.forEach(element => {
+        if(element.id !== asnwer5.aID){
+            element.remove();
+        }
+    });
+    
+    
+
     if(document.getElementById(asnwer5.aID) === null){
+        btn = document.querySelector(".css-button-rotate");
+        if (btn !== null){    
+            if(btn !== dropDownButton5){
+                btn.classList.remove("css-button-rotate");
+            }
+        }
         questionDiv.classList.remove("css-question-border-bot");
         questionP.classList.add("css-question-bold");
         dropDownButton5.classList.add("css-button-rotate");
