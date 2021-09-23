@@ -24,6 +24,18 @@ body {
     background-color: #F2F2F2;
 }
 
+@media screen and (max-width: 450px) {
+    .css-card {
+        overflow: visible;
+        margin: 5%;
+        width: 300px;
+        height: 520px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .css-left-side {
     position: relative;
     overflow: hidden;
@@ -43,10 +55,43 @@ body {
     left: -227%;
 }
 
+@media screen and (max-width: 450px) {
+    .css-left-side {
+        overflow: visible;
+        width: 100%;
+        height: 100%;
+    }
+    .css-left-side .css-background {
+        position: relative;
+        top: 0%;
+        left: 10%;
+    }
+
+    .css-left-side .css-background img {
+        content: url(images/bg-pattern-mobile.svg);
+    }
+
+    .css-left-side .css-woman {
+        position: relative;
+        top: -53%;
+        left: -80%;
+    }
+
+    .css-left-side .css-woman img{
+        content: url(images/illustration-woman-online-mobile.svg);
+    }
+}
+
 .css-box {
     position: absolute;
     top: 42%;
     left: 14%;
+}
+
+@media screen and (max-width: 450px) {
+    .css-box {
+        display: none;
+    }    
 }
 
 .css-right-side {
@@ -57,6 +102,14 @@ body {
     padding-top: 2%;
 }
 
+@media screen and (max-width: 450px) {
+    .css-right-side {
+        width: 80%;
+        height: 320%;
+        margin-top: -30%;
+    }
+}
+
 .css-question {
     width: 420px;
     display: flex;
@@ -64,11 +117,19 @@ body {
 }
 
 .css-question-bold {
-    font-weight: bold;
+    font-family: "Kumbh Sans";
+    font-weight: 700;
 }
 
 .css-question-border-bot {
     border-bottom: 1px solid lightgray;
+}
+
+.css-question p{
+    font-family: "Kumbh Sans";
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
 }
 
 .css-question p:hover {
@@ -92,6 +153,28 @@ body {
 
 
 .css-answer {
+    font-family: "Kumbh Sans";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
     width: 420px;
     border-bottom: 1px solid lightgray;
+}
+
+@media screen and (max-width: 450px) {
+    .css-question {
+        width: auto;
+    }
+ 
+    .css-right-side h1 {
+        font-family: "Kumbh Sans";
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .css-answer {
+        width: auto;
+    }
 }
