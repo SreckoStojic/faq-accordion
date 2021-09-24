@@ -16,7 +16,7 @@ body {
 }
 
 .css-card {
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     width: 920px;
     height: 510px;
@@ -38,7 +38,6 @@ body {
 
 .css-left-side {
     position: relative;
-    overflow: hidden;
     width: 50%;
     display: flex;
 }
@@ -84,8 +83,8 @@ body {
 
 .css-box {
     position: absolute;
-    top: 42%;
-    left: 14%;
+    top: 39%;
+    left: -22%;
 }
 
 @media screen and (max-width: 450px) {
@@ -148,7 +147,7 @@ body {
 }
 
 .css-button-rotate {
-    transform: rotate(180deg);
+    transform: translate(0, -10px) rotate(180deg)
 }
 
 
